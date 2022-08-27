@@ -3,3 +3,13 @@
     height: 100vh !important;
     }
 }
+form.wpcf7-form label {
+    width: 100%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
