@@ -36,36 +36,17 @@
 
                             <h6 class="mb-2 pb-1">IsAutonomous</h6>
           
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Autonomous"
-                                value="option1" checked />
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="Autonomous">
                               <label class="form-check-label" for="Autonomous">Yes</label>
                             </div>
-          
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Non-Autonomous"
-                                value="option2" />
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="Non-Autonomous" checked>
                               <label class="form-check-label" for="Non-Autonomous">No</label>
                             </div>
           
                         </div>
-                        <div class="col-md-6 mb-4">
-
-                            <h6 class="mb-2 pb-1">IsUniversityStatus</h6>
-          
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="University"
-                                value="option1" checked />
-                              <label class="form-check-label" for="University">Yes</label>
-                            </div>
-          
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Non-University"
-                                value="option2" />
-                              <label class="form-check-label" for="Non-University">No</label>
-                            </div>
-          
-                        </div>
+      
                         <div class="col-md-6 mb-4">
                             <h6 class="mb-2 pb-1">Department</h6>
                             <select class="select department">
@@ -75,7 +56,21 @@
                                 <option value="mech">MECH</option>
                                 <option value="it">IT</option>
                             </select>
-                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                          <h6 class="mb-2 pb-1">IsUniversity</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="University" value="option1" checked>
+                            <label class="form-check-label" for="University">Yes</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="Non-University" value="option2">
+                            <label class="form-check-label" for="Non-University">No</label>
+                          </div>
+          
+                        </div>
+
                         <div class="col-md-6 mb-4">
                         <h6 class="mb-2 pb-1">Current Year</h6>
                         <select class="select year">
@@ -86,6 +81,7 @@
                             <option value="4">IV</option>
                         </select>
                         </div>
+
                         <div class="col-md-6 mb-4">
                           <h6 class="mb-2 pb-1">Current Semester</h6>
                           <select class="select">
@@ -100,6 +96,7 @@
                           <option value="8">VIII</option>
                           </select>
                       </div>
+
                       <div class="col-md-6 mb-4">
                         <h6 class="mb-2 pb-1">Mode Of Selection</h6>
                         <select class="-">
@@ -112,8 +109,8 @@
                     </div>
                     
                     
-                    <input type="button" class="btn btn-success btn-lg mb-1" value="Previous" onclick="history.back()"> 
-                    <button type="submit" class="btn btn-success btn-lg mb-1">Proceed</button>
+                    <input type="button" class="btn btn-success btn-lg mb-1" value="Previous"> 
+                    <input type="button" class="btn btn-success btn-lg mb-1" value="Continue">
                     </form>
         
                 </div>
