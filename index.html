@@ -9,98 +9,108 @@
     <title>Student Details</title>
 </head>
 <body>
-    <form action="#" name="StudenSignupForm" onsubmit="return(StudentIDform());"></form>
-    <section class="h-100 h-custom" style="background-color: #8fc4b7;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-lg-10 col-xl-16">
-                <div class="card rounded-10">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D09AQF561xoYK0vVw/company-featured_1128_635/0/1592503977770?e=2147483647&v=beta&t=OcyYR6sFOwZNi5GGwD4Eo6ZGelSsS0M1TBFjuUguUKU"
-                    class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
-                    alt="Sample photo">
-                    <div class="card-body p-0 p-md-0">
-                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Student Details</h3>
-    
-    <form style="background-color:skyblue">  
-        <div class="container">  
-          <h1> Student Details Form</h1> <br>
-        <hr> 
-        <table> 
-        <div class="col-md-6 mb-4">
-            
-            <tr>      
-            <td><label>Student ID: </label></td> 
-    
-      <td><input type="text" name="student id" placeholder= "Student ID" size="15" required />  <br></td>
-    </tr>
-    
-    <tr>
-      <td><label> Firstname: </label></td>
-      <td><input type="text" name="firstname" placeholder= "Firstname" size="15" required />  <br> </td>
-    </tr>
-    <tr>
-      <td><label> Lastname: </label>  </td>
-      <td><input type="text" name="lastname" placeholder="Lastname" size="15" required />  <br> </td>
-    </tr>
-    <tr>
-        <td><label>Contact Phone:<label></td>
-        <td><input type="tel" name="contactphone" placeholder="Contactphone" /></td> 
-        </tr>
-      <td><label> Twitter Handle: </label>   </td>
-      <td><input type="text" name="twitter handle" size="15"required />  <br> </td>
-    </tr>
-      <td><label> Facebook Handle: </label>  </td>  
-      <td><input type="text" name="facebook" size="15"required />  <br> </td>
-    </tr>
-    <tr>
-      <td> <label> Personal Email:</label>  </td>
-      <td><input type="text" name="personalemail" size="15"required />  <br> </td>
-    </tr>
-    <tr>
-      <td><label> Virtusa Email: </label>    </td>
-      <td><input type="text" name="virtusaemail" size="15"required />  <br> </td>
-    </tr>
-    <tr>
-      <td><label> Date of Selection: </label> </td>   
-      <td><input type="text" name="dos " size="15"required />  <br> </td>
-    </tr>
-    <tr>
-    </table> 
-    
-    <label> DOB: </label>  
-    <label for="birthday"></label>
-    
-    <input type="date" id="birthday" name="birthday"> <br>
-      Address 1 :  
-      <textarea cols="50" rows="1" placeholder=" Address" value="address" required>  
-      </textarea> <br>
-      Address 2:
-      <textarea cols="50" rows="1" placeholder=" Address" value="address" required>  
-      </textarea><br>
-      Address 3: 
-      <textarea cols="50" rows="1" placeholder=" Address" value="address" required>  
-      </textarea><br>
-      <table>
-      <tr>
-      <td ><label> State: </label>  </td>  
-      <td><input type="text" placeholder="state"name="state" size="15"required />  <br> </td>
-      </tr>
-      <tr>
-      <td><label> City: </label> </td>   
-      <td><input type="text" placeholder="city"name="city " size="15"required />  <br>  </td>
-      </tr>
-      <tr>
-        <td>
-      <label> PinCode: </label> </td>   
-      <td><input type="text" placeholder="pincode"name="pc " size="15"required />  <br> </td>
-      </tr>
-    </table>
-    </div>
-    <div class="container">
-      <div class="center">
-        <button type="submit" class="btn btn-success btn-lg mb-1" onclick="window.location.href='College.html'">Next</button>
-      </div>
-      </div>   
-    </form>       
+  <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-8 col-xl-6">
+            <div class="card rounded-3">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D09AQF561xoYK0vVw/company-featured_1128_635/0/1592503977770?e=2147483647&v=beta&t=OcyYR6sFOwZNi5GGwD4Eo6ZGelSsS0M1TBFjuUguUKU"
+                class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Student Details</h3>
+                <hr>
+                  <form  method="post" action="/College.html" name="StudentDetailsForm"></form>
+                    <div class="form-outline mb-4">
+                      <input type="text" id="StudentId" class="form-control" required />
+                      <label class="form-label" for="StudentId">Student ID</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="FirstName" class="form-control" required/>
+                      <label class="form-label" for="FirstName">First Name</label>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <input type="text" id="LastName" class="form-control"required />
+                      <label class="form-label" for="LastName">Last Name</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="tel" id="ContactPhone" class="form-control" required/>
+                      <label class="form-label" for="ContactPhone">Contact Phone</label>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <input type="text" id="TwitterHandle" class="form-control" required/>
+                      <label class="form-label" for="TwitterHandle">Twitter Handle</label>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <input type="text" id="FacebookHandle" class="form-control" required/>
+                      <label class="form-label" for="FacebookHandle">Facebook Handle</label>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <input type="email" id="PersonalEmail" class="form-control" required/>
+                      <label class="form-label" for="PersonalEmail">Personal Email</label>
+                    </div>
+                    
+                    <div class="form-outline mb-4">
+                      <input type="email" id="VirtusaEmail" class="form-control" placeholder="@virtusa.com" required/>
+                      <label class="form-label" for="VirtusaEmail">Virtusa Email</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="date" id="DateOfSelection" class="form-control" required/>
+                      <label class="form-label" for="DateOfSelection">Date Of Selection</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="date" id="DateOfBirth" class="form-control" required/>
+                      <label class="form-label" for="DateOfBirth">Date Of Birth</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <textarea cols="50" rows="2"  value="Address1" required>  
+                      </textarea>
+                      <label class="form-label" for="Address1">Address Line 1 </label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <textarea cols="50" rows="2"  value="Address2" required>  
+                      </textarea>
+                      <label class="form-label" for="Address2">Address Line 2 </label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <textarea cols="50" rows="2"  value="Address3" required>  
+                      </textarea>
+                      <label class="form-label" for="Address3">Address Line 3 </label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="State" class="form-control" required/>
+                      <label class="form-label" for="State">State</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="Country" class="form-control" required/>
+                      <label class="form-label" for="Country">Country</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="PinCode" class="form-control" required/>
+                      <label class="form-label" for="PinCode">Pin Code</label>
+                    </div>
+
+                    <input type="button" class="btn btn-success btn-lg mb-1" value="Continue">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
 </body>
 </html>

@@ -19,15 +19,15 @@
                     alt="Sample photo">
                 <div class="card-body p-4 p-md-5">
                     <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">College Info</h3>
-        
+                    <hr>
                     <form class="px-md-2">
         
                     <div class="form-outline mb-4">
-                        <input type="text" id="CollegeName" class="form-control" />
+                        <input type="text" id="CollegeName" required class="form-control" />
                         <label class="form-label" for="CollegeName">College Name</label>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="CollegeId" class="form-control" />
+                        <input type="text" id="CollegeId" required class="form-control" />
                         <label class="form-label" for="CollegeId">College ID</label>
                     </div>
         
@@ -49,7 +49,7 @@
       
                         <div class="col-md-6 mb-4">
                             <h6 class="mb-2 pb-1">Department</h6>
-                            <select class="select department">
+                            <select class="select department" required>
                                 <option value="0">Department</option>
                                 <option value="cse">CSE</option>
                                 <option value="ece">ECE</option>
@@ -58,7 +58,7 @@
                             </select>
                         </div>
 
-                        <div class="col-md-6 mb-4">
+                        <div class="col-md-6 mb-4" >
                           <h6 class="mb-2 pb-1">IsUniversity</h6>
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="exampleRadios" id="University" value="option1" checked>
@@ -73,7 +73,7 @@
 
                         <div class="col-md-6 mb-4">
                         <h6 class="mb-2 pb-1">Current Year</h6>
-                        <select class="select year">
+                        <select class="select year" required>
                             <option value="0">Year</option>
                             <option value="1">I</option>
                             <option value="2">II</option>
@@ -84,7 +84,7 @@
 
                         <div class="col-md-6 mb-4">
                           <h6 class="mb-2 pb-1">Current Semester</h6>
-                          <select class="select">
+                          <select class="select" required>
                           <option value="0">Semester</option>
                           <option value="1">I</option>
                           <option value="2">II</option>
@@ -99,7 +99,7 @@
 
                       <div class="col-md-6 mb-4">
                         <h6 class="mb-2 pb-1">Mode Of Selection</h6>
-                        <select class="-">
+                        <select class="-" required>
                             <option value="0">Standard Recruit</option>
                             <option value="1">VSAP</option>
                             <option value="2">Jatayu</option>
